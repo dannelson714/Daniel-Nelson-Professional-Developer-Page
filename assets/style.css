@@ -60,3 +60,30 @@ header nav {
     margin-right: 25px;
 }
 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero {
+    image-rendering: auto;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./images/IMG_2056.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom-left{
+    position: absolute;
+    font-size: 200%;
+    background-color: cornflowerblue;
+    bottom: 16px;
+    left: 1%;
+}
+
+.special-color{
+    color: cornflowerblue;
+}
