@@ -52,6 +52,11 @@ header h1 {
 
 h2 {
     font-size: 150%;
+    text-align: right;
+    position: absolute;
+    top: -5px;
+    right: 0%;
+    
 }
 
 header nav {
@@ -60,6 +65,25 @@ header nav {
     margin-right: 25px;
 }
 
+/*For the sidebar for each main page article*/
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    position: relative;
+    flex: 30%;
+    padding: 20px;
+    border-right: 1px solid cornflowerblue;
+}
+
+section {
+    flex: 70%;
+    padding: 20px;
+}
+
+/*This container is for the hero bar subheader*/
 .container {
     position: relative;
     text-align: center;
@@ -76,6 +100,7 @@ header nav {
     background-position: center;
 }
 
+/*To position the text laid over the hero image */
 .bottom-left{
     position: absolute;
     font-size: 200%;
