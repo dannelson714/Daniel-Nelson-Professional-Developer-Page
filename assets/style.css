@@ -67,8 +67,10 @@ header nav {
 
 /*For the sidebar for each main page article*/
 article {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-left: 0px;
 }
 
 aside {
@@ -107,6 +109,62 @@ section {
     background-color: cornflowerblue;
     bottom: 16px;
     left: 1%;
+}
+
+/*To style the project gallery section*/
+.gallery{
+    display:block;
+    flex-wrap: wrap;
+    margin-top:0px;
+    padding-top: 0px;
+}
+
+.container-gallery {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+}
+
+/*For the primary project image in the project gallery*/
+#primary {
+    position: relative;
+    display:flex;
+    image-rendering: auto;
+    margin: 10px 0;
+    width: 100%;
+    height: 300px;
+}
+
+/*For the secondary project images in the project gallery*/
+.secondary {
+    position: relative;
+    display:flex;
+    image-rendering:optimizeQuality;
+    width: 425px;
+    height: 100px;
+    margin: 10px 0;
+    object-fit:cover;
+    float: left;
+}
+
+/*Gallery subheading styles*/
+.bottom-gallery{
+    position: absolute;
+    font-size: 200%;
+    background-color: cornflowerblue;
+    bottom: -30px;
+    left: -20px;
+}
+
+.bottom-secondary{
+    position: absolute;
+    font-size: 200%;
+    background-color: cornflowerblue;
+    bottom: -30px;
+    left: -20px;
 }
 
 .special-color{
