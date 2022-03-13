@@ -27,6 +27,10 @@ h1, h2 {
     margin: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -169,4 +173,42 @@ section {
 
 .special-color{
     color: cornflowerblue;
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-style{
+    padding: 10px;
+    border: 1px solid cornflowerblue;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+    text-decoration: none;
+}
+
+/*Adjusting for various screens and devices*/
+@media screen and (max-width: 1272px) {
+    .secondary {
+        width: 200%;
+    }
+}
+@media screen and (max-width: 768px) {
+    header, article, figure, section {
+      flex-direction: column;
+    }
+    .secondary {
+        width: 100%
+    }
+    h2 {
+        text-align: left;
+        left: 0%;
+    }
+    .contact-section{
+        flex-direction: column;
+    }
 }
