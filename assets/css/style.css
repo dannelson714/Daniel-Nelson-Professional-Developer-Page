@@ -30,7 +30,7 @@ h1, h2 {
 
 a {
     text-decoration: none;
-    color: black;
+    color: aliceblue;
 }
 
 nav ul {
@@ -71,26 +71,6 @@ header nav {
     margin-right: 25px;
 }
 
-/*For the sidebar for each main page article*/
-article {
-    display:flex;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
-    margin-left: 0px;
-}
-
-aside {
-    position: relative;
-    flex: 30%;
-    padding: 20px;
-    border-right: 1px solid cornflowerblue;
-}
-
-section {
-    flex: 70%;
-    padding: 20px;
-}
-
 /*This container is for the hero bar subheader*/
 .container {
     position: relative;
@@ -117,6 +97,41 @@ section {
     left: 1%;
 }
 
+/*For the sidebar for each main page article*/
+article {
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-left: 0px;
+}
+
+aside {
+    position: relative;
+    flex: 30%;
+    padding: 20px;
+    border-right: 1px solid cornflowerblue;
+}
+
+section {
+    flex: 70%;
+    padding: 20px;
+}
+
+/*Styling the in-line picture for the About Me section*/
+#about-pic {
+    position: relative;
+    display:flex;
+    image-rendering:optimizeQuality;
+    width: 140px;
+    height: 190px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    object-fit:cover;
+    float: left;
+    border: 1px solid cornflowerblue;
+}
+
+
 /*To style the project gallery section*/
 .gallery{
     display:block;
@@ -132,20 +147,6 @@ section {
     text-align: center;
     justify-content: space-between;
     color: white;
-}
-
-/*Styling the in-line picture for the About Me section*/
-#about-pic {
-    position: relative;
-    display:flex;
-    image-rendering:optimizeQuality;
-    width: 140px;
-    height: 190px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    object-fit:cover;
-    float: left;
-    border: 1px solid cornflowerblue;
 }
 
 /*For the primary project image in the project gallery*/
@@ -200,12 +201,12 @@ section {
     color: cornflowerblue;
 }
 
+/*Styling for the Contact Section*/
 .contact-section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    color:black;
 }
 
 .contact-style{
@@ -217,8 +218,8 @@ section {
     text-decoration: none;
 }
 
-div p{
-    color: black;
+div a{
+    color:black;
 }
 
 /*Adjusting for various screens and devices*/
