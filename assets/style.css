@@ -5,6 +5,7 @@
   }
 
 /* Element Selectors */
+
 body {
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -132,6 +133,20 @@ section {
     color: white;
 }
 
+/*Styling the in-line picture for the About Me section*/
+#about-pic {
+    position: relative;
+    display:flex;
+    image-rendering:optimizeQuality;
+    width: 140px;
+    height: 190px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    object-fit:cover;
+    float: left;
+    border: 1px solid cornflowerblue;
+}
+
 /*For the primary project image in the project gallery*/
 #primary {
     position: relative;
@@ -147,11 +162,20 @@ section {
     position: relative;
     display:flex;
     image-rendering:optimizeQuality;
-    width: 425px;
+    width: 400px;
     height: 100px;
     margin: 10px 0;
     object-fit:cover;
     float: left;
+}
+
+/*For hovering effects on gallery images*/
+.hover:hover {
+    box-shadow: 0 0 10px grey;
+}
+
+.hover:focus {
+    border-right-width: 10px;
 }
 
 /*Gallery subheading styles*/
@@ -192,7 +216,7 @@ section {
 }
 
 /*Adjusting for various screens and devices*/
-@media screen and (max-width: 1272px) {
+@media screen and (max-width: 1200px) {
     .secondary {
         width: 200%;
     }
