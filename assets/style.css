@@ -173,10 +173,13 @@ section {
 /*For hovering effects on gallery images*/
 .hover:hover {
     box-shadow: 0 0 10px grey;
+    transform: scale(.8);
 }
 
 .hover:focus {
     border-right-width: 10px;
+    background-size: 150%;
+
 }
 
 /*Gallery subheading styles*/
